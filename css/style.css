@@ -1,13 +1,118 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,800;1,100;1,900&display=swap");
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Barra de navegación */
-.navColor div {
-  background-color: orange;
+.backgroundImage {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(..//media/backgroundpintor.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.fila {
+  width: 100%;
+  padding: 0px 80px;
+}
+
+.content {
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content h1 {
+  font-size: 45px;
+  color: #fff;
+  font-weight: 400;
+}
+.content p {
+  font-size: 16px;
+  color: #fff;
+}
+.content a {
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 19px;
+  display: inline-block;
+  letter-spacing: 2px;
+  padding: 12px 20px;
+  background-color: #d5935d;
+  border-radius: 5px;
+  color: #fff;
+}
+.content a:hover {
+  background-color: #eb6a00;
+  transition: 0.5s;
+}
+
+.backgroundImage2 {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../media/fondopintura4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.filaGaleria {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textoGaleria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3rem;
+}
+.textoGaleria h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 45px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 4rem;
+  width: 800px;
+}
+.textoGaleria p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 350px;
+}
+
+.gallery {
+  margin-top: 250px;
+  margin-bottom: 250px;
+  margin-right: 75px;
+  width: 35%;
+}
+.gallery img {
+  width: 100%;
+  padding: 20px;
+}
+
+.backgroundImageContacto {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../media/fondopinturajpg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

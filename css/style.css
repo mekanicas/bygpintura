@@ -6,6 +6,38 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* navbar--------- */
+/* .header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: transparent;
+}
+
+.nav-lista{
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-lista li a {
+  text-decoration: none;
+  color: $blank;
+}
+.abrir-menu, 
+.cerrar-menu{
+  display: none;
+} */
+/* navbar--------- */
+.logo {
+  max-width: 5rem;
+}
+
+.colornav {
+  background-color: transparent !important;
+}
+
 .backgroundImage {
   width: 100%;
   min-height: 100vh;
@@ -114,5 +146,53 @@
   background-position: center;
   background-size: cover;
 }
+
+/* @media screen and (max-width: 550px){
+  .abrir-menu, 
+  .cerrar-menu{
+      display: block;
+      border: 0;
+      font-size: 1.25rem;
+      background-color: transparent;
+      cursor: pointer;
+      transition: 0.3ms;
+  }
+  .abrir-menu{
+      color: $blank;
+  }
+  .cerrar-menu{
+      color: $blank;
+  }
+  .nab{
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $black;
+      padding: 2rem;
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+  }
+  .nab.visible{
+      opacity: 1;
+      visibility: visible;
+  }
+  .nav-lista{
+      flex-direction: column;
+      align-items: end;
+  }
+  .nav-lista{
+    li{
+      a{
+        color: $blank;
+      }
+    }
+  }
+} */
 
 /*# sourceMappingURL=style.css.map */

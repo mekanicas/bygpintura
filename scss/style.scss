@@ -31,10 +31,10 @@ $black: #1c1c1c;
   display: none;
 } */
 /* navbar--------- */
-.logo{
+.logo {
   max-width: 5rem;
 }
-.colornav{
+.colornav {
   background-color: transparent !important;
 }
 .backgroundImage {
@@ -142,7 +142,172 @@ $black: #1c1c1c;
   background-position: center;
   background-size: cover;
 }
+.backgroundImageTrabajos {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../media/fondopintura5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.headingNosotros {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+  h1 {
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  &::after {
+    content: "";
+    position: relative;
+    width: 50%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #000000;
+  }
+  p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+  }
+}
+.contenedorTrabajos {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-image {
+  flex: 1;
+  margin-right: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  max-height: 550px;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+  }
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+}
+.about-content {
+  flex: 1;
+  margin-top: 15px;
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #666;
+  }
+}
+.read-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 19px;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  transition: 0.3s ease;
+  &:hover {
+    background-color: #3e8e41;
+  }
+}
+.contentAbout {
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    font-size: 45px;
+    color: $black;
+    font-weight: 400;
+  }
+  &:after {
+    content: "";
+    position: relative;
+    width: 50%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #000000;
+  }
+}
+
 @media (max-width: 767px) {
+  .headingNosotros {
+    padding: 0px 20px;
+    h1 {
+      font-size: 36px;
+      p {
+        font-size: 17px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .contenedorTrabajos {
+    padding: 0px;
+  }
+  .about {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .about-image {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .about-content p {
+    padding: 0px;
+    font-size: 16px;
+    .read-more {
+      font-size: 16px;
+    }
+  }
+  .contentAbout {
+    h1 {
+      width: 100%;
+    }
+    &:after {
+      content: "";
+      position: relative;
+      width: 100%;
+      height: 6px;
+      display: block;
+      margin: 0 auto;
+      margin-right: 50px;
+      background-color: #000000;
+    }
+  }
 }
 /* @media screen and (max-width: 550px){
   .abrir-menu, 

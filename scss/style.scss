@@ -87,7 +87,6 @@ $black: #1c1c1c;
     color: #fff;
     font-weight: 400;
     font-size: 4rem;
-    width: 800px;
   }
   p {
     display: flex;
@@ -96,7 +95,6 @@ $black: #1c1c1c;
     font-size: 16px;
     color: #fff;
     font-size: 1.5rem;
-    width: 350px;
   }
 }
 .gallery {
@@ -107,6 +105,11 @@ $black: #1c1c1c;
   img {
     width: 100%;
     padding: 20px;
+    border-radius: 30px;
+    &:hover{
+      scale: 1.1;
+      transition: 0.3s;
+    }
   }
 }
 .backgroundImageContacto {
@@ -258,9 +261,37 @@ $black: #1c1c1c;
     }
   }
 }
+@media (max-width: 1024px){
+
+}
 @media (max-width: 767px) {
-  .backgroundImage {
-    background-attachment: fixed;
+  .backgroundImage2 {
+    .filaGaleria {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .textoGaleria {
+      h1 {
+        height: 200px;
+        width: auto;
+        padding-bottom: 10px;
+        font-size: 36px;
+      }
+      p {
+        height: 100px;
+        width: auto;
+        font-size: 15px;
+      }
+    }
+  }
+  .gallery {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 75px;
+    img {
+      width: 95vw;
+      margin: 10px;
+    }
   }
   .content {
     h1 {

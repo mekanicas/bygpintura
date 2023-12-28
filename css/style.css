@@ -91,7 +91,6 @@
   color: #fff;
   font-weight: 400;
   font-size: 4rem;
-  width: 800px;
 }
 .textoGaleria p {
   display: flex;
@@ -100,7 +99,6 @@
   font-size: 16px;
   color: #fff;
   font-size: 1.5rem;
-  width: 350px;
 }
 
 .gallery {
@@ -112,6 +110,11 @@
 .gallery img {
   width: 100%;
   padding: 20px;
+  border-radius: 30px;
+}
+.gallery img:hover {
+  scale: 1.1;
+  transition: 0.3s;
 }
 
 .backgroundImageContacto {
@@ -269,8 +272,29 @@
 }
 
 @media (max-width: 767px) {
-  .backgroundImage {
-    background-attachment: fixed;
+  .backgroundImage2 .filaGaleria {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .backgroundImage2 .textoGaleria h1 {
+    height: 200px;
+    width: auto;
+    padding-bottom: 10px;
+    font-size: 36px;
+  }
+  .backgroundImage2 .textoGaleria p {
+    height: 100px;
+    width: auto;
+    font-size: 15px;
+  }
+  .gallery {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 75px;
+  }
+  .gallery img {
+    width: 95vw;
+    margin: 10px;
   }
   .content h1 {
     font-size: 40px;

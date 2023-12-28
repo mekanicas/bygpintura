@@ -7,30 +7,6 @@ $black: #1c1c1c;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-/* navbar--------- */
-/* .header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-  background-color: transparent;
-}
-
-.nav-lista{
-  list-style-type: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.nav-lista li a {
-  text-decoration: none;
-  color: $blank;
-}
-.abrir-menu, 
-.cerrar-menu{
-  display: none;
-} */
-/* navbar--------- */
 .logo {
   max-width: 5rem;
 }
@@ -141,6 +117,11 @@ $black: #1c1c1c;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  .formu {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+  }
 }
 .backgroundImageTrabajos {
   width: 100%;
@@ -278,6 +259,20 @@ $black: #1c1c1c;
   }
 }
 @media (max-width: 767px) {
+  .backgroundImage {
+    background-attachment: fixed;
+  }
+  .content {
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 13px;
+      width: 240px;
+      height: auto;
+    }
+  }
   .headingNosotros {
     padding: 0px 20px;
     h1 {

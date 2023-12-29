@@ -45,18 +45,21 @@ $black: #1c1c1c;
     color: #fff;
   }
   a {
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    box-shadow: 0 0 5px #03e9f4, 0 0 15px #03e9f4, 0 0 25px #03e9f4,
+      0 0 100px #03e9f4;
     text-decoration: none;
     margin-top: 20px;
     font-size: 19px;
     display: inline-block;
     letter-spacing: 2px;
     padding: 12px 20px;
-    background-color: #d5935d;
     border-radius: 5px;
     color: #fff;
     &:hover {
-      background-color: #eb6a00;
-      transition: 0.5s;
+      background-color: #03e9f4;
+      color: $black;
+      transition: 0.7s;
     }
   }
 }
@@ -68,6 +71,14 @@ $black: #1c1c1c;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.textoFormulario {
+  h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: $blank;
+  }
 }
 .filaGaleria {
   display: flex;
@@ -106,10 +117,35 @@ $black: #1c1c1c;
     width: 100%;
     padding: 20px;
     border-radius: 30px;
-    &:hover{
+    &:hover {
       scale: 1.1;
       transition: 0.3s;
     }
+  }
+}
+.backgroundImage3 {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../media/fondopintura7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.textoElegirnos {
+  display: flex;
+  flex-direction: column;
+  h1 {
+    display: flex;
+    color: $blank;
+    justify-content: center;
+    font-size: 50px;
+  }
+  p {
+    display: flex;
+    color: $blank;
+    justify-content: center;
+    font-size: 15px;
   }
 }
 .backgroundImageContacto {
@@ -261,8 +297,7 @@ $black: #1c1c1c;
     }
   }
 }
-@media (max-width: 1024px){
-
+@media (max-width: 1024px) {
 }
 @media (max-width: 767px) {
   .backgroundImage2 {
@@ -272,15 +307,19 @@ $black: #1c1c1c;
     }
     .textoGaleria {
       h1 {
+        text-align: center;
         height: 200px;
         width: auto;
         padding-bottom: 10px;
+        padding-right: 10px;
         font-size: 36px;
       }
       p {
         height: 100px;
         width: auto;
         font-size: 15px;
+        text-align: center;
+        padding-right: 10px;
       }
     }
   }
@@ -295,6 +334,7 @@ $black: #1c1c1c;
   }
   .content {
     h1 {
+      text-align: center;
       font-size: 40px;
     }
     p {
@@ -348,50 +388,3 @@ $black: #1c1c1c;
     }
   }
 }
-/* @media screen and (max-width: 550px){
-  .abrir-menu, 
-  .cerrar-menu{
-      display: block;
-      border: 0;
-      font-size: 1.25rem;
-      background-color: transparent;
-      cursor: pointer;
-      transition: 0.3ms;
-  }
-  .abrir-menu{
-      color: $blank;
-  }
-  .cerrar-menu{
-      color: $blank;
-  }
-  .nab{
-      opacity: 0;
-      visibility: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-      gap: 1rem;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      background-color: $black;
-      padding: 2rem;
-      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-  }
-  .nab.visible{
-      opacity: 1;
-      visibility: visible;
-  }
-  .nav-lista{
-      flex-direction: column;
-      align-items: end;
-  }
-  .nav-lista{
-    li{
-      a{
-        color: $blank;
-      }
-    }
-  }
-} */

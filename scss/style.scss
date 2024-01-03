@@ -14,7 +14,7 @@ $black: #1c1c1c;
   background-color: transparent !important;
 }
 .backgroundImage {
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(..//media/backgroundpintor.jpg);
@@ -302,7 +302,7 @@ $black: #1c1c1c;
   width: 100%;
 }
 .barraLogros {
-  width: 100%;
+  width: 100vw;
   display: flex;
   background-color: #754c0d;
   height: 150px;
@@ -316,7 +316,8 @@ $black: #1c1c1c;
   }
 }
 .contactanosHeader {
-  width: 100%;
+  width: 100vw;
+  height: auto;
   min-height: 100vh;
   top: 0;
   left: 0;
@@ -325,21 +326,24 @@ $black: #1c1c1c;
   align-items: center;
   flex-direction: column;
   background-image: url(../media/pexels-antoni-shkraba-5493662.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 3rem;
+
   h1 {
     margin-top: 2rem;
-    margin-left: 19rem;
-    color: $blank;
+    margin-left: 26rem;
+    color: #232323;
     font-size: 1em;
     font-weight: bold;
   }
   h2 {
-    color: $blank;
+    color: #232323;
     font-size: 5em;
     font-weight: bold;
   }
   h3 {
-    color: #513e21;
+    color: #e9eae4;
     font-size: 5em;
     font-weight: bold;
   }
@@ -505,6 +509,8 @@ $black: #1c1c1c;
     align-items: center;
     flex-direction: column;
     margin-bottom: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
     h1 {
       display: none;
     }

@@ -9,6 +9,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -52,12 +53,13 @@
                 <header>
                     <div class="fila">
                         <div class="content">
-                            <h1>Conoce más acerca de nuestros trabajos</h1>
+                            <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom">Conoce más acerca de nuestros
+                                trabajos</h1>
                         </div>
                     </div>
                 </header>
     </main>
-    <div class="headingNosotros">
+    <div data-aos="flip-up" class="headingNosotros">
         <h1>Sobre nosotros</h1>
         <p>ByG.</p>
     </div>
@@ -66,7 +68,7 @@
             <div class="about-image">
                 <img src="../media/sobrenosotros1.jpg" alt="Imagen de rodillo pintando de verde la pared">
             </div>
-            <div class="about-content">
+            <div data-aos="fade-left" class="about-content">
                 <h2>Te ayudamos a darle color a tu hogar</h2>
                 <p>"BYG, fundada por Bruno y Gabriel, dos profesionales de la pintura, ofrece calidad y experiencia
                     inigualables. Nuestra
@@ -81,7 +83,7 @@
             </div>
             <div class="fila">
                 <div class="contentAbout">
-                    <section class="galeria container">
+                    <section data-aos="fade-left" class="galeria container">
                         <div class="text-center">
                             <h1>Galeria</h1>
                             <p>A continuación les compartimos algunos de nuestros trabajos de pintura</p>
@@ -162,6 +164,10 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
